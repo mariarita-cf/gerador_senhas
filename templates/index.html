@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>Gerador de Senhas Aleatórias</h1>
+    
+    <form action="/" method="post">
+        <label for="length">Comprimento da senha:</label>
+        <input type="number" id="length" name="length" min="4" max="50" required><br><br>
+
+        <label><input type="checkbox" name="uppercase"> Letras maiúsculas (A-Z)</label><br>
+        <label><input type="checkbox" name="lowercase"> Letras minúsculas (a-z)</label><br>
+        <label><input type="checkbox" name="numbers"> Números (0-9)</label><br>
+        <label><input type="checkbox" name="symbols"> Símbolos (!@#$...)</label><br><br>
+
+        <button type="submit">Gerar senha</button>
+    </form>
+
+    {% if password %}
+    <h2>Senha gerada:</h2>
+    <input type="text" id="senha" value="{{ password }}" readonly>
+    <button type="button" onclick="copiarSenha()">Copiar</button>
+{% endif %}
+
+<script>
+function copiarSenha() {
+    var senhaInput = document.getElementById("senha");
+    senhaInput.select();
+    senhaInput.setSelectionRange(0, 99999); // Compatibilidade mobile
+    document.execCommand("copy");
+
+    alert("Senha copiada para a área de transferência!");
+}
+</script>
+
+</body>
+</html>
