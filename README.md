@@ -28,7 +28,7 @@ pip install -r requirements.txt
 python app.py
 
 🌐 Demo online
-🔗 https://gerador-senhas-seunome.onrender.com
+🔗 https://gerador-senhas-iow1.onrender.com
 
 📸 Preview
 
