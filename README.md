@@ -31,9 +31,12 @@ python app.py
 🔗 https://gerador-senhas-iow1.onrender.com
 
 📸 Preview
+![screenshot](preview.png)
 
 📄 Licença
 Este projeto está licenciado sob a licença MIT.
+
+- **Desenvolvimento**: [codebyrita](https://github.com/codebyrita)
 
 
 ---
