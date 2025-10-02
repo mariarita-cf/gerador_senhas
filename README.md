@@ -36,7 +36,7 @@ python app.py
 📄 Licença
 Este projeto está licenciado sob a licença MIT.
 
-- **Desenvolvimento**: [codebyrita](https://github.com/codebyrita)
+- **Desenvolvimento**: Maria Rita
 
 
 ---
